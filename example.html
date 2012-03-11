@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <style>
+            *{
+                color: white;
+                font-family: Helvetica, Arial, Tahoma;
+                font-size: 24px;
+                margin: 0;
+                padding: 0;
+            }
+			
+			body{
+				background: #030105;
+			}
+            h1{
+                font-size: 30px;
+                font-weight: normal;
+            }
+        
+            .nav{
+                float: right;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                opacity: 0.8;
+            }
+            .nav a{
+                display:block;
+                height: 48px;
+                width: 48px;
+                text-decoration: none;
+                line-height: 48px;
+                text-align: center;
+                background: black;
+                color: white;
+                float: left;
+                border-radius: 24px;
+            }
+            
+            .main{
+                text-align: center;
+                width: 480px;
+                line-height: 48px;
+                text-align: center;
+                position: relative;
+                margin: 10px auto;
+                background: black;
+                color: white;
+                border-radius: 24px;
+                padding: 10px 0;
+                opacity: 0.8;
+            }
+            p{
+                font-size: 16px;
+            }
+            pre{
+                font-size: 14px;
+                font-family: monospace;
+                text-align: left;
+                line-height: 18px;
+                margin-left: -130px;
+            }
+        </style>
+            <link href="little-wing.css" media="screen" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.littleWing-0.5.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('.littleWing').littleWing();
+            });
+        </script>
+	<title>Little Wing - easy fullscreen backgrounds</title>
+    </head>
+    
+    <body>
+        
+        <div class="littleWing">
+			<a href="img/1.jpg"></a>
+			<a href="img/2.jpg"></a>
+			<a href="img/3.jpg"></a>
+			<a href="img/4.jpg"></a>
+			<a href="img/5.jpg"></a>
+        </div>
+        <div class="littleWingLoading">Loading background images</div>
+        
+        <div class="main">
+            <h1>Little Wing</h1>
+            <p>
+                JQuery Plugin for fullscreen backgrounds
+                <br/>
+                Options:
+                <pre>
+                    fadeTime : 800
+                    useButtons : true
+                    nextButton : '.nextBackground'
+                    previousButton : '.previousBackground'
+                    loadingElement : '.littleWingLoading'
+                    cycleImages : true
+                    cycleTime : 5000
+                </pre>
+            </p>
+        </div>
+        
+        <div class="nav">
+        <a href="#" class="previousBackground">&laquo;</a>
+        <a href="#" class="nextBackground" style="margin-left: 10px">&raquo;</a>
+        </div>
+
+    </body>
+</html>
