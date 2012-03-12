@@ -3,6 +3,9 @@ Little Wing
 
 Version 0.5
 
+Soon more updates, and real readme :)
+-------------------------------------
+
 
 Options
 -------
